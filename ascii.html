@@ -1,0 +1,73 @@
+<!--
+
+
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ASCIImation</title>
+        <link rel="stylesheet" href="ascii.css" type="text/css" />
+        <script type="text/javascript" src="https://webster.cs.washington.edu/js/asciimation/animations.js"></script>
+        <script type="text/javascript" src="custom-animation.js"></script>
+        <script type="text/javascript" src="ascii.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>ASCIImation</h1>
+        </header>
+        <textarea rows="20" cols="80" id="textarea"></textarea>
+        <form id="controls">
+            <fieldset class="control">
+                <legend>Play Controls</legend>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+            </fieldset>
+            <fieldset class="control">
+                <legend>Animation</legend>
+                <select name="animation">
+                    <option value="blank"></option>
+                    <option value="exersize">Exersize</option>
+                    <option value="juggler">Juggler</option>
+                    <option value="bike">Bike</option>
+                    <option value="dive">Dive</option>
+                    <option value="ducks">Ducks</option>
+                    <option value="pony">Pony</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </fieldset>
+            <fieldset class="control">
+                <legend>Size</legend>
+                <select name="size">
+                    <option value="tiny">Tiny</option>
+                    <option value="small">Small</option>
+                    <option vlaue="medium" selected="selected">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="extra large">Extra Large</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset class="control">
+                <legend>Speed</legend>
+                <input type="radio" name="speed" value="turbo" id="turbo"/>
+                <label for="turbo">Turbo</label>
+                <input type="radio" name="speed" value="normal" id="normal"/> 
+                <label for="normal">Normal</label>
+                <input type="radio" name="speed" value="slo-mo" id="slo-mo"/>
+                <label for="slo-mo">Slo-mo</label>
+            </fieldset>
+        </form>
+        <footer>
+            <a href="https://validator.w3.org/#validate_by_input">
+                <img src="https://webster.cs.washington.edu/images/w3c-html-blue.png"
+                alt="HTML valid" /></a>
+            <br/>
+            <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">
+                <img src="https://webster.cs.washington.edu/images/w3c-css-blue.png"
+                alt="CSS valid" /></a>
+            <br/>
+            <a href="https://courses.cs.washington.edu/courses/cse154/17au/jslint/jslint.html">
+                <img src="https://webster.cs.washington.edu/images/w3c-js-blue.png"
+                alt="JS valid" /></a>
+        </footer>
+    </body>
+</html>

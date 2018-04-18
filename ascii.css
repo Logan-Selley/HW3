@@ -1,0 +1,57 @@
+/*
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    background-color: #9999FF;
+    font-family: 'Roboto', monospace;
+}
+
+header {
+    text-decoration: bold;
+    text-align: center;
+    font-size: 32pt;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+}
+
+.control {
+    vertical-align: text-top;
+    border: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 12pt;
+    font-family: Arial, sans-serif;
+}
+
+legend {
+    font-size: 14pt;
+    font-family: 'Roboto', monospace;
+    text-align: left;
+}
+
+footer {
+    position: relative;
+    float: right;
+    bottom: 5px;
+    right: 5px;
+}
+
+footer img {
+    width: 70px;
+}
+
+textarea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: monospace;
+    font-size: 12pt;
+    width: 90%;
+    height: 400px;
+}
