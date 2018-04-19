@@ -1,5 +1,10 @@
 /*
+Logan Selley
+4/18/2018
+CSE 154 AM
+HW3 CSS
 
+CSS to style a page to play/create ASCII animations
 */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -10,7 +15,7 @@ body {
 }
 
 header {
-    text-decoration: bold;
+    font-weight: bold;
     text-align: center;
     font-size: 32pt;
 }
@@ -36,7 +41,7 @@ legend {
 }
 
 footer {
-    position: relative;
+    position: static;
     float: right;
     bottom: 5px;
     right: 5px;

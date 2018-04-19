@@ -1,15 +1,19 @@
 <!--
+Logan Selley
+4/18/2018
+CSE 154 AM
+HW3
 
-
+HTML for a website to create and view ASCII animations with given preset animations
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>ASCIImation</title>
         <link rel="stylesheet" href="ascii.css" type="text/css" />
-        <script type="text/javascript" src="https://webster.cs.washington.edu/js/asciimation/animations.js"></script>
-        <script type="text/javascript" src="custom-animation.js"></script>
-        <script type="text/javascript" src="ascii.js"></script>
+        <script src="https://webster.cs.washington.edu/js/asciimation/animations.js"></script>
+        <script src="custom-animation.js"></script>
+        <script src="ascii.js"></script>
     </head>
     <body>
         <header>
@@ -24,9 +28,9 @@
             </fieldset>
             <fieldset class="control">
                 <legend>Animation</legend>
-                <select name="animation">
-                    <option value="blank"></option>
-                    <option value="exersize">Exersize</option>
+                <select id="animation">
+                    <option value="blank">&nbsp;</option>
+                    <option value="exercise">Exercise</option>
                     <option value="juggler">Juggler</option>
                     <option value="bike">Bike</option>
                     <option value="dive">Dive</option>
@@ -37,20 +41,20 @@
             </fieldset>
             <fieldset class="control">
                 <legend>Size</legend>
-                <select name="size">
+                <select id="size">
                     <option value="tiny">Tiny</option>
                     <option value="small">Small</option>
-                    <option vlaue="medium" selected="selected">Medium</option>
+                    <option value="medium" selected="selected">Medium</option>
                     <option value="large">Large</option>
                     <option value="extra large">Extra Large</option>
                     <option value="XXL">XXL</option>
                 </select>
             </fieldset>
-            <fieldset class="control">
+            <fieldset class="control" id="speed">
                 <legend>Speed</legend>
                 <input type="radio" name="speed" value="turbo" id="turbo"/>
                 <label for="turbo">Turbo</label>
-                <input type="radio" name="speed" value="normal" id="normal"/> 
+                <input type="radio" checked="checked" name="speed" value="normal" id="normal"/> 
                 <label for="normal">Normal</label>
                 <input type="radio" name="speed" value="slo-mo" id="slo-mo"/>
                 <label for="slo-mo">Slo-mo</label>
